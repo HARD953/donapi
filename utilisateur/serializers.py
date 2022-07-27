@@ -21,7 +21,7 @@ class DonateurMSerializer(serializers.HyperlinkedModelSerializer):
 class DonateurOrSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = DonateurUser
-        fields=['first_name','last_name','email','numero','organisations']
+        fields=['first_name','last_name','email','numero','organisations','password']
         extra_kwargs ={
             'password':{'write_only':True}
         }
